@@ -25,7 +25,7 @@ class VisualServoYoloGrasp(Node):
         super().__init__('visual_servo_save_photo')
 
         # ==================== 0. 初始化图片保存路径 ====================
-        self.photo_dir = os.path.join(os.getcwd(), 'photo')
+        self.photo_dir = os.path.join(os.getcwd(), 'img_card')
         if not os.path.exists(self.photo_dir):
             os.makedirs(self.photo_dir)
             self.get_logger().info(f"已创建图片保存目录: {self.photo_dir}")
@@ -59,7 +59,7 @@ class VisualServoYoloGrasp(Node):
             return
 
         # ==================== 3. ROS & YOLO 初始化 ====================
-        self.declare_parameter('model_path', 'models/best(1).pt')
+        self.declare_parameter('model_path', 'models/card.pt')
         self.declare_parameter('target_class', 'card')
         model_path = self.get_parameter('model_path').get_parameter_value().string_value
         self.target_class_name = self.get_parameter('target_class').get_parameter_value().string_value
