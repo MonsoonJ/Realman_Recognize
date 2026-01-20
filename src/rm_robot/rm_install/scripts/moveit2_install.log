@@ -1,0 +1,69 @@
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+curl 已经是最新版 (7.81.0-1ubuntu1.13)。
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 22 个软件包未被升级。
+GitHub520 Host added to host file
+Refreshed network settings, sleep 5 seconds
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+将会同时安装下列软件：
+  brz bzr git git-man libapr1 libaprutil1 liberror-perl libserf-1-1 libsvn1
+  libutf8proc2 mercurial mercurial-common python3-breezy python3-configobj
+  python3-deprecated python3-dulwich python3-fastbencode python3-fastimport
+  python3-github python3-gitlab python3-gpg python3-patiencediff
+  python3-requests-toolbelt python3-vcstools python3-wrapt subversion
+建议安装：
+  brz-doc python3-breezy.tests git-daemon-run | git-daemon-sysvinit git-doc
+  git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn kdiff3
+  | kdiff3-qt | kompare | meld | tkcvs | mgdiff qct python3-mysqldb
+  python3-openssl python3-breezy-dbg python3-kerberos python3-paramiko
+  python-configobj-doc python-gitlab-doc db5.3-util libapache2-mod-svn
+  subversion-tools
+下列【新】软件包将被安装：
+  brz bzr git git-man libapr1 libaprutil1 liberror-perl libserf-1-1 libsvn1
+  libutf8proc2 mercurial mercurial-common python3-breezy python3-configobj
+  python3-deprecated python3-dulwich python3-fastbencode python3-fastimport
+  python3-github python3-gitlab python3-gpg python3-patiencediff
+  python3-requests-toolbelt python3-vcstools python3-wrapt python3-wstool
+  subversion
+升级了 0 个软件包，新安装了 27 个软件包，要卸载 0 个软件包，有 22 个软件包未被升级。
+需要下载 12.9 MB 的归档。
+解压缩后会消耗 65.8 MB 的额外空间。
+获取:1 https://mirrors.ustc.edu.cn/ubuntu jammy/main amd64 python3-configobj all 5.0.6-5 [34.8 kB]
+获取:2 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-fastbencode amd64 0.0.5-1build1 [39.5 kB]
+获取:3 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-dulwich amd64 0.20.31-1.1build1 [289 kB]
+获取:4 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-patiencediff amd64 0.2.1-1build3 [21.7 kB]
+获取:5 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-breezy amd64 3.2.1+bzr7585-1build1 [1,881 kB]
+获取:6 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 brz all 3.2.1+bzr7585-1build1 [39.0 kB]
+获取:7 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 bzr all 2.7.0+bzr6622+brz [4,064 B]
+获取:8 https://mirrors.ustc.edu.cn/ubuntu jammy/main amd64 liberror-perl all 0.17029-1 [26.5 kB]
+忽略:9 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 git-man all 1:2.34.1-1ubuntu1.10
+错误:10 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 git amd64 1:2.34.1-1ubuntu1.10
+  404  Not Found [IP: 202.141.176.110 443]
+忽略:11 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 libapr1 amd64 1.7.0-8ubuntu0.22.04.1
+忽略:12 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 libaprutil1 amd64 1.6.1-5ubuntu4.22.04.1
+获取:13 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libserf-1-1 amd64 1.3.9-10ubuntu2 [50.0 kB]
+获取:14 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libutf8proc2 amd64 2.7.0-3 [73.9 kB]
+获取:15 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/universe amd64 libsvn1 amd64 1.14.1-3ubuntu0.22.04.1 [1,387 kB]
+获取:16 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 mercurial-common all 6.1.1-1ubuntu1 [2,906 kB]
+获取:17 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 mercurial amd64 6.1.1-1ubuntu1 [320 kB]
+获取:18 https://mirrors.ustc.edu.cn/ubuntu jammy/main amd64 python3-wrapt amd64 1.13.3-1build1 [34.0 kB]
+获取:19 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-deprecated all 1.2.13-2 [9,804 B]
+获取:20 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-fastimport all 0.9.14-2.1 [32.2 kB]
+获取:21 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-github all 1.55-1 [94.0 kB]
+获取:22 https://mirrors.ustc.edu.cn/ubuntu jammy/main amd64 python3-requests-toolbelt all 0.9.1-1 [38.0 kB]
+获取:23 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-gitlab all 1:2.10.1-2 [54.0 kB]
+错误:24 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 python3-gpg amd64 1.16.0-1.2ubuntu4.1
+  404  Not Found [IP: 202.141.176.110 443]
+获取:25 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-vcstools all 0.1.42-4 [31.7 kB]
+获取:26 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 python3-wstool all 0.1.18-3 [39.3 kB]
+获取:27 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/universe amd64 subversion amd64 1.14.1-3ubuntu0.22.04.1 [960 kB]
+错误:9 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 git-man all 1:2.34.1-1ubuntu1.10
+  404  Not Found [IP: 202.141.176.110 443]
+错误:11 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 libapr1 amd64 1.7.0-8ubuntu0.22.04.1
+  404  Not Found [IP: 202.141.176.110 443]
+错误:12 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 libaprutil1 amd64 1.6.1-5ubuntu4.22.04.1
+  404  Not Found [IP: 202.141.176.110 443]
+已下载 8,366 kB，耗时 5秒 (1,556 kB/s)

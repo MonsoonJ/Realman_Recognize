@@ -1,0 +1,9 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2487  100  2487    0     0   5653      0 --:--:-- --:--:-- --:--:--  5652
+E: 无法下载 https://mirrors.ustc.edu.cn/ubuntu/pool/main/g/git/git-man_2.34.1-1ubuntu1.10_all.deb  404  Not Found [IP: 202.141.176.110 443]
+E: 无法下载 https://mirrors.ustc.edu.cn/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.10_amd64.deb  404  Not Found [IP: 202.141.176.110 443]
+E: 无法下载 https://mirrors.ustc.edu.cn/ubuntu/pool/main/a/apr/libapr1_1.7.0-8ubuntu0.22.04.1_amd64.deb  404  Not Found [IP: 202.141.176.110 443]
+E: 无法下载 https://mirrors.ustc.edu.cn/ubuntu/pool/main/a/apr-util/libaprutil1_1.6.1-5ubuntu4.22.04.1_amd64.deb  404  Not Found [IP: 202.141.176.110 443]
+E: 无法下载 https://mirrors.ustc.edu.cn/ubuntu/pool/main/g/gpgme1.0/python3-gpg_1.16.0-1.2ubuntu4.1_amd64.deb  404  Not Found [IP: 202.141.176.110 443]
+E: 有几个软件包无法下载，要不运行 apt-get update 或者加上 --fix-missing 的选项再试试？

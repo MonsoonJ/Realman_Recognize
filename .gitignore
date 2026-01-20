@@ -1,0 +1,9 @@
+build/
+install/
+log/
+frames/
+__pycache__/
+oldfils/
+img_bottle/
+models/
+img_card/
