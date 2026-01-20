@@ -13,21 +13,11 @@ ros2 topic pub --once /rm_driver/set_gripper_position_cmd rm_ros_interfaces/msg/
 
 #流程命令
 conda activate recogn && source install/setup.bash	#环境
+colcon build  && source install/setup.bash
 
-colcon build && source install/setup.bash	#编译
-colcon build --packages-select vi_grab
 
 ros2 launch rm_bringup rm_bringup_lite.launch.py	#机械臂驱动启动
-
-
-
-一键启动
-conda activate recogn && colcon build
-source install/setup.bash
-
+ros2 run vi_grab grasp_card_executor 
 ros2 run vi_grab grasp_bottle_executor
-
-
-bash start.sh
 
 
