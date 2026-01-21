@@ -346,7 +346,7 @@ class VisualServoYoloGrasp(Node):
             return
         
         # 手动修正，使用新的坐标转换逻辑
-        candidates.sort(key=lambda x: x['cx'] + x['cy'])
+        candidates.sort(key=lambda x: (x['cx'] + x['cy']))
         target = candidates[0]
 
         # ================== 保存检测结果图 2 (YOLO) ==================

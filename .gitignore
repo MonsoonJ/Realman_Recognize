@@ -11,3 +11,5 @@ img_card/
 models/
 !models/
 !models/yolov8n.pt
+models/card.pt
+models/card2.pt

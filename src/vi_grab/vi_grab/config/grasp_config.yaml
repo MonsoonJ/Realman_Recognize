@@ -31,16 +31,16 @@ paths:
 
 # ==================== 机械臂初始位置 ====================
 home_position:
-  x: -0.4
-  y: 0.0
-  z: 0.4
+  x: -0.40054
+  y: 0.00003
+  z: 0.39987
   # 姿态为垂直向下，由代码动态计算
 
 # ==================== 放置点位置 ====================
 place_position:
-  x: 0.01
-  y: -0.2
-  z: 0.75
+  x: 0.11451
+  y: -0.20159
+  z: 0.75175
 
 # ==================== 步骤执行参数 ====================
 steps:
@@ -58,9 +58,9 @@ steps:
     hsv_lower: [0, 90, 40]
     hsv_upper: [30, 255, 255]
     morphology_kernel_size: 5
-    descend_distance: 0.12  # 下降距离（米）
+    descend_distance: 0.12002  # 下降距离（米）
     z_offset: 0.10          # 无轮廓时的下探距离
-    camera_y_offset: 0.04   # 相机Y轴偏移（用于对齐）
+    camera_y_offset: 0.04411   # 相机Y轴偏移（用于对齐）
   
   # Step 4: YOLO 识别
   step4:
@@ -76,8 +76,8 @@ steps:
   step6:
     timeout: 3.3
     speed: 40
-    grasp_height_offset: 0.14  # 抓取位置上方偏移（米）
-    camera_y_offset: -0.005    # 相机Y轴偏移用于精确定位
+    grasp_height_offset: 0.13849  # 抓取位置上方偏移（米）
+    camera_y_offset: -0.00351    # 相机Y轴偏移用于精确定位
   
   # Step 7: 夹爪闭合
   step7:
@@ -96,8 +96,8 @@ steps:
 # ==================== 夹爪控制 ====================
 gripper:
   open_position: 850
-  pick_speed: 500
-  pick_force: 400
+  pick_speed: 600
+  pick_force: 380
 
 # ==================== 深度检测参数 ====================
 depth:
