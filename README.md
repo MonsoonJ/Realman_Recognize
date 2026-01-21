@@ -78,19 +78,21 @@ source install/setup.bash
 ```bash
 # 1. 启动机器人驱动
 ros2 launch rm_bringup rm_bringup_lite.launch.py
+
+ros2 launch rm_bringup rm_bringup.launch.py
 ```
 
 #### 启动视觉抓取系统
 
 ```bash
 # 一键启动全部功能
-./start.sh
+./start_card.sh
 
 # 或分别启动
 ros2 launch rm_bringup rm_bringup.launch.py
 ros2 run vi_grab yolo_rs_publisher
 python3 src/vi_grab/vi_grab/camera_to_base.py
-ros2 run vi_grab grasp_executor3  #抓取水瓶
+ros2 run vi_grab grasp_card_executor  #抓取水瓶
 ```
 
 ## 功能说明
@@ -119,15 +121,6 @@ set_gripper(position)
 - **圆弧运动** (`/arm_movec`): 圆弧轨迹规划
 - **力位混合控制**: 力控与位置控制的结合
 
-### 视觉识别
-
-```bash
-# 启动YOLO目标检测
-ros2 run vi_grab yolo_rs_publisher
-
-# 相机坐标系转换
-ros2 run vi_grab camera_to_base
-```
 
 ## 目录结构
 
@@ -142,9 +135,12 @@ rm_vision_ws/
 │   │   ├── rm_moveit2_config/ # MoveIt2配置
 │   │   └── rm_ros_interfaces/ # 消息定义
 │   └── vi_grab/           # 视觉抓取
-│       ├── camera_to_base.py   # 坐标转换
-│       ├── grasp_executor3.py   # 抓取水瓶执行器
-│       └── yolo_rs_publisher.py # YOLO检测发布器
+│         ├── camera_to_base.py   # 坐标转换
+│         ├── grasp_card_executor.py   # 抓取卡片执行器
+│         ├── grasp_bottle_executor.py   # 抓取水瓶执行器
+│         └── yolo_rs_publisher.py # YOLO检测发布器
+│         └── config 
+│               └──grasp_config.yaml #卡片夹取配置文件
 ├── models/                # YOLO模型
 │   └── yolov8n.pt
 ├── ReadMe/                # 文档和依赖

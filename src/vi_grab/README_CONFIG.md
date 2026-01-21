@@ -115,14 +115,3 @@ cp vi_grab/config/grasp_config.yaml grasp_config_backup_$(date +%Y%m%d_%H%M%S).y
 # 恢复备份
 cp grasp_config_backup_20260121_143000.yaml vi_grab/config/grasp_config.yaml
 
-
-## 常见问题
-
-**Q: 配置文件找不到?**
-A: 确保 `grasp_config.yaml` 在 `vi_grab/config/` 目录下，重新build项目。
-
-**Q: 修改配置后没有生效?**
-A: 需要重新运行程序，配置在启动时加载。
-
-**Q: 如何恢复默认参数?**
-A: 使用本项目提供的原始 `grasp_config.yaml` 文件。

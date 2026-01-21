@@ -21,7 +21,7 @@ camera:
 
 # ==================== 模型配置 ====================
 model:
-  yolo_model_path: "models/card.pt"
+  yolo_model_path: "models/card2.pt"
   target_class: "card"
   detection_confidence: 0.5
 

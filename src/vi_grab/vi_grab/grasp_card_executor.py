@@ -430,7 +430,7 @@ class VisualServoYoloGrasp(Node):
         # 计算新姿态
         target_quat = self.get_place_quat()
 
-        self.get_logger().info(f"Step 9: 前往放置点 ({target_x}, {target_y}, {target_z}) 并调整姿态...")
+        self.get_logger().info(f"Step 9: 前往放置点 ({target_x}, {target_y}, {target_z}) ")
         # 涉及到大幅度旋转，使用关节运动(MoveJ)比直线运动(MoveL)更安全
         step9_cfg = self.config['steps']['step9']
         self.send_movej_p(target_x, target_y, target_z, target_quat, speed=step9_cfg['speed'])
