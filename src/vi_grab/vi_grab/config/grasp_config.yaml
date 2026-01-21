@@ -1,0 +1,110 @@
+# 视觉伺服抓取配置文件
+
+# ==================== 相机与手眼标定 ====================
+camera:
+  # RealSense 相机参数
+  width: 640
+  height: 480
+  fps: 30
+  format: "bgr8"
+  
+  # 手眼标定参数（相机到末端执行器的转换）
+  rotation_cam_to_ee:
+    - [0.99984546, -0.00464906, -0.01695408]
+    - [0.00448498,  0.99994286, -0.00970348]
+    - [0.01699823,  0.00962594,  0.99980918]
+  
+  translation_cam_to_ee:
+    - 0.01213023
+    - -0.06167299
+    - 0.026354
+
+# ==================== 模型配置 ====================
+model:
+  yolo_model_path: "models/card.pt"
+  target_class: "card"
+  detection_confidence: 0.5
+
+# ==================== 路径配置 ====================
+paths:
+  photo_save_dir: "img_card"
+
+# ==================== 机械臂初始位置 ====================
+home_position:
+  x: -0.4
+  y: 0.0
+  z: 0.4
+  # 姿态为垂直向下，由代码动态计算
+
+# ==================== 放置点位置 ====================
+place_position:
+  x: 0.01
+  y: -0.2
+  z: 0.75
+
+# ==================== 步骤执行参数 ====================
+steps:
+  # Step 1: 归位
+  step1:
+    timeout: 5.0
+    speed: 40
+  
+  # Step 2: 视觉对齐并下降
+  step2:
+    timeout: 4.0
+    retry_interval: 0.5
+    speed: 40
+    # 矩形检测参数
+    hsv_lower: [0, 90, 40]
+    hsv_upper: [30, 255, 255]
+    morphology_kernel_size: 5
+    descend_distance: 0.12  # 下降距离（米）
+    z_offset: 0.10          # 无轮廓时的下探距离
+    camera_y_offset: 0.04   # 相机Y轴偏移（用于对齐）
+  
+  # Step 4: YOLO 识别
+  step4:
+    timeout: 1.0
+    retry_interval: 0.1
+  
+  # Step 5: 水平移动
+  step5:
+    timeout: 2.0
+    speed: 40
+  
+  # Step 6: 垂直下降
+  step6:
+    timeout: 3.3
+    speed: 40
+    grasp_height_offset: 0.14  # 抓取位置上方偏移（米）
+    camera_y_offset: -0.005    # 相机Y轴偏移用于精确定位
+  
+  # Step 7: 夹爪闭合
+  step7:
+    timeout: 2.0
+  
+  # Step 8: 抬起
+  step8:
+    timeout: 3.5
+    speed: 40
+  
+  # Step 9: 前往放置点
+  step9:
+    timeout: 3.0
+    speed: 30
+
+# ==================== 夹爪控制 ====================
+gripper:
+  open_position: 850
+  pick_speed: 500
+  pick_force: 400
+
+# ==================== 深度检测参数 ====================
+depth:
+  search_radius: 2           # 搜索半径（像素）
+  min_depth: 0.0
+  max_depth: 2.0
+
+# ==================== 其他参数 ====================
+system:
+  camera_warmup_time: 2.0    # 相机预热时间（秒）
