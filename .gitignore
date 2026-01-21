@@ -5,5 +5,9 @@ frames/
 __pycache__/
 oldfils/
 img_bottle/
-models/
 img_card/
+
+# Models - 只提交yolov8n.pt，其他模型忽略
+models/
+!models/
+!models/yolov8n.pt
