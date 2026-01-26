@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'grasp_bottle_executor = vi_grab.grasp_bottle_executor:main',
             'grasp_card_executor = vi_grab.grasp_card_executor:main',
+            'grasp_card_executor2 = vi_grab.grasp_card_executor2:main',
             'gripper_arm_demo = vi_grab.gripper_arm_demo:main',
         ],
     },

@@ -7,6 +7,7 @@ camera:
   height: 480
   fps: 30
   format: "bgr8"
+  #format: rs.format.mjpeg
   
   # 手眼标定参数（相机到末端执行器的转换）
   rotation_cam_to_ee:

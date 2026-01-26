@@ -7,9 +7,7 @@ oldfils/
 img_bottle/
 img_card/
 
-# Models - 只提交yolov8n.pt，其他模型忽略
-models/
-!models/
-!models/yolov8n.pt
+models/hand.pt
 models/card.pt
 models/card2.pt
+models/card.onnx
